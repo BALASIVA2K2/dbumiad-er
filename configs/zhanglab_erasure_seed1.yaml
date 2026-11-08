@@ -3,7 +3,7 @@ dataset: zhanglab
 method: erasure_ddpm      # or: plain_ddpm, f_anogan, ssdm
 seed: 1
 data:
-  root: data/zhanglab
+  root: /kaggle/input/datasets/paultimothymooney/chest-xray-pneumonia/chest_xray
   image_size: 224
   normalize: [-1, 1]
 diffusion:
