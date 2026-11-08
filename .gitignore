@@ -1,0 +1,23 @@
+# Datasets and model weights (too large for GitHub)
+data/*
+!data/README.md
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Raw anomaly maps (metrics CSVs and final figures ARE committed)
+results/raw/
+
+# Python / Jupyter / environment
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+wandb/
+.DS_Store
+Thumbs.db

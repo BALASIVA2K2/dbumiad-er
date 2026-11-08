@@ -1,0 +1,11 @@
+# Install PyTorch separately first, matching your CUDA version (see README)
+numpy
+pandas
+scikit-learn
+scikit-image
+opencv-python
+pillow
+pydicom
+pyyaml
+tqdm
+matplotlib
