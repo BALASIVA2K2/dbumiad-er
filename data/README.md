@@ -44,3 +44,18 @@ Access: Stanford AIMI research use agreement accepted on 08\11\2026 (date)
 
 - Plan: frontal only; No Finding = normal; test split built from train.csv with patient-level separation (to be decided)
 
+
+
+## Split decisions (fixed)
+
+- One model per dataset; train on that dataset's normal images only; no cross-dataset testing
+
+- Split seed = 42 (separate from training seeds 1-3); split CSVs committed in data/splits/
+
+- Validation used only for hyperparameters and F1 threshold; test used once for final results
+
+- ZhangLab: train 1,200 normal; val 141 normal + 141 pneumonia (from train folder); test official 234 + 390
+
+- RSNA: Normal vs Lung Opacity ("Not Normal" excluded); train 7,551 normal; val 300 + 300; test 1,000 + 1,000; Dice on RSNA only (box masks)
+
+- CheXpert: frontal only; normal = No Finding = 1; abnormal = any pathology = 1 (excluding Support Devices, uncertain-only excluded); patient-level split; val 300 + 300; test 1,000 + 1,000; train = remaining normals
