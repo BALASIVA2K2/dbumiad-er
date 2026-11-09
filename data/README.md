@@ -16,7 +16,7 @@ Kaggle path: /kaggle/input/datasets/paultimothymooney/chest-xray-pneumonia/chest
 
 
 
-\## RSNA Pneumonia Detection Challenge
+## RSNA Pneumonia Detection Challenge
 
 Kaggle path: /kaggle/input/competitions/rsna-pneumonia-detection-challenge
 
@@ -34,7 +34,7 @@ Kaggle path: /kaggle/input/competitions/rsna-pneumonia-detection-challenge
 
 Kaggle path: /kaggle/input/datasets/ashery/chexpert
 
-Access: Stanford AIMI research use agreement accepted on \_\_\_ (date)
+Access: Stanford AIMI research use agreement accepted on 08\11\2026 (date)
 
 - CSV "Path" values start with "CheXpert-v1.0-small/"; strip this prefix and join to the Kaggle path
 
