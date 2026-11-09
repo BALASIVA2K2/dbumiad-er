@@ -1,6 +1,7 @@
 # Datasets and model weights (too large for GitHub)
 data/*
 !data/README.md
+!data/splits/
 checkpoints/
 *.pt
 *.pth
