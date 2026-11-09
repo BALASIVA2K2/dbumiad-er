@@ -1,0 +1,22 @@
+experiment: chexpert_erasure_seed1
+dataset: chexpert
+method: erasure_ddpm      # or: plain_ddpm, f_anogan, ssdm
+seed: 1
+data:
+  root: /kaggle/input/datasets/ashery/chexpert
+  image_size: 224
+  normalize: [-1, 1]
+diffusion:
+  timesteps: 1000
+  noise_schedule: linear
+erasure:
+  ratio: 0.25             # placeholder: set from your design
+  patch_size: 32          # placeholder
+inference:
+  window_size: 64         # tune on validation only
+  stride: 32
+train:
+  batch_size: 16
+  lr: 1.0e-4
+  max_steps: 100000
+  checkpoint_every: 5000
